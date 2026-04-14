@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pour Michaiza ❤️</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#fff5f8,#ffdfe8,#fff5f8);color:#5b2333;text-align:center;overflow-x:hidden}
+    .hearts{position:fixed;inset:0;pointer-events:none;z-index:8;overflow:hidden}
+    .heart{position:absolute;bottom:-40px;font-size:20px;animation:float 6s linear infinite;opacity:.85;filter:drop-shadow(0 8px 16px rgba(232,77,125,.35))}
+    @keyframes float{0%{transform:translateY(0) translateX(0) scale(.8);opacity:0}15%{opacity:1}50%{opacity:.95}100%{transform:translateY(-120vh) translateX(30px) scale(1.2);opacity:0}}
+    .wrapper{width:min(1100px,92%);margin:auto;position:relative;z-index:2}
+
+    h1{font-size:clamp(2.5rem,6vw,5rem);color:#c63d6b}
+    h2{color:#c63d6b}
+    .btn{border:none;border-radius:14px;padding:12px 20px;font-weight:bold;cursor:pointer}
+    .btn-main{background:#e84d7d;color:white}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-start;margin-top:20px}
+    .ghost{background:white;color:#c63d6b;border:1px solid #efbfd0;text-decoration:none;display:inline-block}
+    .message-box{background:white;padding:28px;border-radius:24px;max-width:1000px;margin:0 auto;text-align:left;line-height:1.9} 
+    .overlay{position:fixed;inset:0;background:rgba(255,245,248,.96);display:flex;align-items:center;justify-content:center;z-index:50}
+    .overlay-card{background:white;padding:32px;border-radius:28px;max-width:700px;width:92%;box-shadow:0 18px 45px rgba(176,77,109,.16);animation:wow .9s ease}
+    .overlay.hide{display:none}
+    @keyframes wow{0%{transform:scale(.85);opacity:0}60%{transform:scale(1.04);opacity:1}100%{transform:scale(1)}}
+
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;padding:40px 0}
+    .hero img{width:100%;height:500px;object-fit:cover;border-radius:20px}
+
+    .lead{font-size:18px;line-height:1.7}
+
+    .qualities{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .box{background:white;padding:20px;border-radius:20px}
+
+    .carousel{overflow:hidden;border-radius:20px}
+    .slides{display:flex;transition:0.6s}
+    .slide{min-width:100%}
+    .slide img{width:100%;height:700px;object-fit:contain;background:#f8e7ee}
+
+    .caption{padding:10px}
+
+    .secret{display:none;margin-top:20px}
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .slide img{height:450px}
+      .qualities{grid-template-columns:1fr}
+      .hero-actions{justify-content:center}
+      .message-box{text-align:left}
+    }
+  </style>
+</head>
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<div class="overlay" id="introOverlay">
+  <div class="overlay-card">
+    <h2>Pour Michaiza ❤️</h2>
+    <p style="font-size:18px;line-height:1.7">J’ai préparé cette petite surprise spécialement pour toi.<br> Clique juste en dessous pour entrer dans ton univers d’anniversaire.</p>
+    <button class="btn btn-main" id="enterBtn">Entrer ✨</button>
+  </div>
+</div>
+
+<div class="wrapper">
+
+<section class="hero">
+  <div>
+    <h1>Joyeux anniversaire ma Gongjumin ♥️♥️♥️♥️♥️</h1>
+    <p class="lead">Aujourd’hui est un jour très spécial, parce que l’une des personnes les plus importantes de ma vie est née 💕</p>
+    <div class="hero-actions">
+      <a href="#beaute" class="btn btn-main" style="text-decoration:none;display:inline-block">Un aperçu de ta beauté♥️</a>
+      <a href="#message" class="btn ghost">Lire mon message</a>
+    </div>
+  </div>
+  <img src="7.jpeg">
+</section>
+
+<section>
+  <h2>Les choses que j'aime le plus chez toi✨</h2>
+
+  <div class="qualities">
+    <div class="box">
+      <h3>Ton sourire 😊</h3>
+      <p>Oui il est magnifique</p>
+    </div>
+
+    <div class="box">
+      <h3>Ta douceur 💖</h3>
+      <p>C'est quelque chose qui me plait beaucoup chez toi, meme en colère tu ne hausse jamais le ton</p>
+    </div>
+
+    <div class="box">
+      <h3>Ta présence 🌷</h3>
+      <p>Tu reponds toujours présente quand j'ai besoin de toi</p>
+    </div>
+
+    <div class="box">
+      <h3>Ton coeur ♥️</h3>
+      <p>Tu débordes tellement d'amour souvent j'ai l'impression de ne pas te meriter meme si c'est toi qui ne merite pas bien sur mdr 🤣🤣😭😭</p>
+    </div>
+  </div>
+
+  <p style="margin-top:20px">Il y'a bien sur autre chose que j'aime chez toi mais je vais m'arreter là. Comprends juste que j'aime tout chez toi</p>
+</section>
+
+<section id="beaute">
+  <h2>Tu es magnifique ♥️</h2>
+  <p>Franchement, tu es une femme incroyablement belle.</p>
+
+  <div class="carousel">
+    <div class="slides" id="slides">
+
+      <div class="slide"><img src="1.jpeg"><div class="caption">Tu es d'une beauté naturelle incroyable ♥️</div></div>
+      <div class="slide"><img src="4.jpeg"><div class="caption">Tu rayonnes 🌸</div></div>
+      <div class="slide"><img src="5.jpeg"><div class="caption">Tu es belle dh Aya 💖</div></div>
+      <div class="slide"><img src="7.jpeg"><div class="caption">Tu es clean dh tu travailles à la clinique oub❤️</div></div>
+      <div class="slide"><img src="8.jpeg"><div class="caption">La résidente de BELLEville  ✨</div></div>
+      <div class="slide"><img src="9.jpeg"><div class="caption">Tu es magnifique, simplement magnifique ♥️</div></div>
+
+    </div>
+  </div>
+
+  <button onclick="prev()">←</button>
+  <button onclick="next()">→</button>
+</section>
+
+<section id="message">
+  <h2>Mon message pour toi 💌</h2>
+
+  <div class="message-box">
+    <p>
+    Je viens par ce message te souhaiter un très joyeux anniversaire 🥳❤️<br><br>
+    Joyeux anniversaire ma sœur 🫠❤️<br><br>
+
+    Je suis tellement fier de la femme que tu deviens de jour en jour. Je t’admire énormément. Chaque jour, tu ne cesses de me surprendre, et toujours positivement ❤️<br><br>
+Que cette nouvelle année t’apporte encore plus de sagesse, qu’elle t’aide à guérir de tes blessures et à te rapprocher encore plus de ton DIEU 🙏❤️<br><br>
+Merci pour tout l’amour que tu me donnes. Merci pour tout, vraiment. Tu sais que je t’aime énormément, même si j’ai parfois du mal à le montrer avec des mots 😭🤣❤️<br><br>
+Joyeux anniversaire 🎉🥳❤️<br>
+OUÉDRAOGO Grâce Michaïza<br><br>
+May God bless you 🙏<br>
+Love you to the moon and back ❤️
+    </p>
+  </div>
+</section>
+
+<section>
+  <div style="background:white;padding:40px;border-radius:30px;max-width:900px;margin:0 auto;box-shadow:0 20px 50px rgba(176,77,109,0.15)">
+    <h2>Une petite surprise finale 🎁</h2>
+    <p style="font-size:18px;color:#6a3046;margin-top:0">Clique sur le bouton pour découvrir le dernier message.</p>
+    <button class="btn btn-main" onclick="showSecret()">Ouvrir la surprise</button>
+
+  <div class="secret" id="secret">
+    Encore une fois joyeux anniversaire ma Gongjumin ♥️♥️♥️♥️♥️<br><br>
+    Que Dieu te bénisse, te protège et te remplisse de bonheur 🙏❤️<br><br>
+    Je t'aime énormément ❤️
+  </div>
+</section>
+
+</div>
+
+<script>
+let enterBtn=document.getElementById("enterBtn");
+let introOverlay=document.getElementById("introOverlay");
+enterBtn.onclick=function(){introOverlay.classList.add("hide")}
+
+let index=0;
+let slides=document.getElementById("slides");
+let total=slides.children.length;
+
+function next(){index=(index+1)%total;slides.style.transform=`translateX(-${index*100}%)`}
+function prev(){index=(index-1+total)%total;slides.style.transform=`translateX(-${index*100}%)`}
+
+function showSecret(){document.getElementById("secret").style.display="block"}
+
+setInterval(next,3000);
+// COEURS ANIMÉS
+let container=document.getElementById("hearts");
+for(let i=0;i<28;i++){let h=document.createElement("div");h.className="heart";h.innerHTML="❤️";h.style.left=Math.random()*100+"vw";h.style.animationDuration=(4+Math.random()*5)+"s";h.style.animationDelay=(Math.random()*5)+"s";h.style.fontSize=(18+Math.random()*22)+"px";container.appendChild(h)}
+
+</script>
+
+</body>
+</html>
